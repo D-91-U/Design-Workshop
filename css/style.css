@@ -394,25 +394,361 @@ h3.price-box-title {
 }
 
 span.price-box-text {
-    display: flex;
-    justify-content: center;
-    font-size: 46px;
-    font-weight: normal;
-    font-family: var(--open-font-family);
-  }
-
-.price-box-list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  font-size: 46px;
+  font-weight: normal;
+  font-family: var(--open-font-family);
 }
 
-.price-box-list li{
-    padding-top: 20px;
+.price-box-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
 }
 
-.red span.price-box-text{
-    color: var(--color-redish);
+.price-box-list li {
+  padding-top: 20px;
+}
+/*RED BOX*/
+.red span.price-box-text {
+  color: var(--color-redish);
+  padding-bottom: 69px;
+}
+
+.list {
+  position: relative;
+}
+
+.red li:nth-of-type(1)::before {
+  content: "";
+  background-image: url(../assets/Ckechmark-1.svg);
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 25px;
+  left: -25px;
+}
+
+.red li:nth-of-type(2)::before {
+  content: "";
+  background-image: url(../assets/Ckechmark-1.svg);
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 25px;
+  left: -25px;
+}
+
+.red li:nth-of-type(3)::before {
+  content: "";
+  background-image: url(../assets/Ckechmark-1.svg);
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 25px;
+  left: -25px;
+}
+
+.red li:nth-of-type(4)::before {
+  content: "";
+  background-image: url(../assets/Close.svg);
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 25px;
+  left: -25px;
+}
+
+.red li:nth-of-type(5)::before {
+  content: "";
+  background-image: url(../assets/Close.svg);
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 25px;
+  left: -25px;
+}
+.price-box.red {
+  position: relative;
+}
+.price-box-button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.price-box-button.red {
+  position: absolute;
+  bottom: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  background: var(--color-redish);
+  color: white;
+  border-radius: 23px;
+  text-decoration: none;
+}
+
+/*BLUE BOX*/
+.price-box-text.blue {
+  color: var(--color-primary);
+}
+
+.price-limited-offer.blue {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 61px;
+}
+
+.blue li:nth-of-type(1)::before {
+  content: "";
+  background-image: url(../assets/Ckechmark-1.svg);
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 25px;
+  left: -25px;
+}
+
+.blue li:nth-of-type(2)::before {
+  content: "";
+  background-image: url(../assets/Ckechmark-1.svg);
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 25px;
+  left: -25px;
+}
+
+.blue li:nth-of-type(3)::before {
+  content: "";
+  background-image: url(../assets/Ckechmark-1.svg);
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 25px;
+  left: -25px;
+}
+
+.blue li:nth-of-type(4)::before {
+  content: "";
+  background-image: url(../assets/Ckechmark-1.svg);
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 25px;
+  left: -25px;
+}
+
+.blue li:nth-of-type(5)::before {
+  content: "";
+  background-image: url(../assets/Close.svg);
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 25px;
+  left: -25px;
+}
+.price-box-button.blue {
+  position: absolute;
+  bottom: -110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  background: var(--color-primary);
+  color: white;
+  border-radius: 23px;
+  text-decoration: none;
+}
+
+/*GREEN BOX*/
+
+.price-box-text.green {
+  color: var(--color-green);
+}
+
+.price-limited-offer.green {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 61px;
+}
+
+.green li:nth-of-type(1)::before {
+  content: "";
+  background-image: url(../assets/Ckechmark-1.svg);
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 25px;
+  left: -25px;
+}
+
+.green li:nth-of-type(2)::before {
+  content: "";
+  background-image: url(../assets/Ckechmark-1.svg);
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 25px;
+  left: -25px;
+}
+
+.green li:nth-of-type(3)::before {
+  content: "";
+  background-image: url(../assets/Ckechmark-1.svg);
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 25px;
+  left: -25px;
+}
+
+.green li:nth-of-type(4)::before {
+  content: "";
+  background-image: url(../assets/Ckechmark-1.svg);
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 25px;
+  left: -25px;
+}
+
+.green li:nth-of-type(5)::before {
+  content: "";
+  background-image: url(../assets/Ckechmark-1.svg);
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 25px;
+  left: -25px;
+}
+.price-box-button.green {
+  position: absolute;
+  bottom: -66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  background: var(--color-green);
+  color: white;
+  border-radius: 23px;
+  text-decoration: none;
+}
+/*PRICE BOX END*/
+
+/*Contact Container*/
+.container-contact {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  height: 376px;
+  width: 896px;
+  margin: auto;
+}
+/*Contact LEFT START Container*/
+.contact-title-left {
+  font-family: var(--raleway-font-family);
+  font-size: 49px;
+  text-align: left;
+  font-weight: normal;
+  padding-bottom: 22px;
+}
+
+.contact-text-left {
+  font-family: var(--open-font-family);
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  padding-bottom: 42px;
+  position: relative;
+}
+
+.contact-form-left-e-mail {
+  font-family: var(--open-font-family);
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  color: var(--color-grey);
+  padding-left: 37px;
+  position: relative;
+}
+.contact-form-left-e-mail::before {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url(../assets/Mail\ Icon.svg);
+  position: absolute;
+  left: 0px;
+}
+
+.contact-form-left-phone {
+  font-family: var(--open-font-family);
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  color: var(--color-grey);
+  padding-left: 57px;
+  position: relative;
+}
+.contact-form-left-phone::before {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url(../assets/Phone\ Icon.svg);
+  position: absolute;
+  left: 20px;
+}
+/*Contact LEFT END Container*/
+
+/*Contact RIGHT START Container*/
+.contact-form-right {
+  height: 372px;
+  width: 440px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.contact-form-right-name {
+  height: 57px;
+  font-family: var(--open-font-family);
+  font-size: 11px;
+  font-weight: normal;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.contact-form-right-e-mail {
+  height: 57px;
+  font-family: var(--open-font-family);
+  font-size: 11px;
+  font-weight: normal;
+  text-align: left top;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.contact-form-right-checkbox {
+  
     
+}
+
+.contact-form-right-checkbox-text {
+  font-family: var(--open-font-family);
+  font-size: 12px;
+}
+
+.contact-form-right-checkbox input{
+
 }
