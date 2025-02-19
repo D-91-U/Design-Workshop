@@ -13,7 +13,7 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 ;
   padding: 0;
 }
 
@@ -31,7 +31,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: auto;
   height: 70px;
   border-bottom: 1px solid var(--color-grey);
 }
@@ -131,13 +131,11 @@ body {
   align-items: center;
   width: 1627px;
   height: 531px;
-  border: 1px solid black;
   margin: auto;
 }
 .statistic-title {
   height: 30vh;
   width: 84vw;
-  border: 1px solid black;
   padding-top: 100px;
   text-align: center;
 }
@@ -148,7 +146,6 @@ div.statistic-icons {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border: 1px solid black;
   padding: 0 400px 0 400px;
 }
 .circle {
@@ -193,7 +190,6 @@ div.statistic-icons {
 .circle-icon + p {
   display: flex;
   justify-content: center;
-  border: 1px solid black;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
@@ -206,7 +202,6 @@ div.statistic-icons {
 .circle-icon + p + p {
   display: flex;
   align-self: center;
-  border: 1px solid black;
   text-align: center;
   font-size: 16px;
   color: var(--color-grey);
@@ -221,7 +216,6 @@ div.statistic-icons {
   flex-direction: column;
   margin: auto;
   max-width: 1624px;
-  border: 1px solid black;
 }
 
 .info-content {
@@ -232,11 +226,9 @@ div.statistic-icons {
   width: 1124px;
   margin: auto;
   max-width: 1395px;
-  border: 1px solid black;
 }
 
 .info-title {
-  border: 1px solid black;
   display: flex;
   justify-content: space-between;
   height: 188px;
@@ -261,7 +253,6 @@ h2.info-title {
 }
 
 .info-banner {
-  border: 1px solid black;
   height: 294px;
   width: 433px;
   position: relative;
@@ -286,7 +277,6 @@ h2.info-title {
 }
 
 .info-banner-picture {
-  border: 1px solid black;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -343,7 +333,6 @@ h2.info-title {
 /* PRICE start */
 
 .price {
-  border: 1px solid black;
   height: 616px;
   width: 1266px;
   margin: auto;
@@ -351,7 +340,6 @@ h2.info-title {
 .content-price-title {
   display: flex;
   justify-content: center;
-  border: 1px solid black;
   font-size: 36px;
   font-weight: normal;
   font-family: var(--raleway-font-family);
@@ -359,7 +347,6 @@ h2.info-title {
 }
 
 .price-content {
-  border: 1px solid black;
   display: flex;
   justify-content: space-between;
 }
@@ -646,7 +633,7 @@ span.price-box-text {
 .container-contact {
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
+
   height: 376px;
   width: 896px;
   margin: auto;
@@ -713,7 +700,6 @@ span.price-box-text {
   height: 372px;
   width: 440px;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -738,17 +724,136 @@ span.price-box-text {
   color: var(--color-primary);
   border-bottom: 1px solid var(--color-grey);
 }
-
 .contact-form-right-checkbox {
-  
-    
+  height: 108px;
+  width: 439px;
+}
+.contact-form-right-checkbox-box {
+  display: flex;
+  flex-direction: column;
+  height: 24px;
+  width: 24px;
+  border: 1px solid var(--color-grey);
+  border-radius: 4px;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.contact-form-right-checkbox-box::before {
+  content: "";
+  position: absolute;
+  background-image: url(../assets/Checkmark.svg);
+  height: 11px;
+  width: 12px;
+  top: 7px;
+  left: 6px;
 }
 
 .contact-form-right-checkbox-text {
+  display: flex;
+  justify-content: center;
   font-family: var(--open-font-family);
   font-size: 12px;
+  font-weight: normal;
+  text-align: left;
+  margin-left: 40px;
 }
 
-.contact-form-right-checkbox input{
+.contact-form-right-checkbox-button {
+  display: flex;
+  justify-content: flex-end;
+  height: 57px;
+  width: 440px;
+  padding-top: 20px;
+}
+.contact-form-right-checkbox-button-send:hover{
+    background-color: var(--color-grey);
+    color: gold;
+}
+.contact-form-right-checkbox-button-send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  width: 226px;
+  height: 57px;
+  border-radius: 35px;
+  text-decoration: none;
+  color: white;
+}
+/*Contact RIGHT END Container*/
+
+/*footer*/
+.footer {
+  height: 89px;
+  width: 1626px;
+  border-top: 1px solid var(--color-grey);
+  margin: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+
+  height: 89px;
+  max-width: 1395px;
+  margin: auto;
+}
+
+/*LEFT FOOTER START*/
+.footer-content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 86px;
+  width: 200px;
+  margin: left auto;
+  padding-left: 137px;
+}
+.footer-content-left-logo {
+  width: 115px;
+  height: 30px;
+  font-family: var(--raleway-font-family);
+  font-size: 26px;
+  font-weight: normal;
+  color: var(--color-primary);
+  padding-bottom: 6.5px;
 
 }
+
+.footer-content-left-text {
+  width: 214px;
+  height: 15px;
+  font-family: var(--open-font-family);
+  font-size: 11px;
+  font-weight: normal;
+  color: var(--color-grey);
+  padding-bottom: 17px;
+}
+
+/*LEFT FOOTER END*/
+
+/*RIGHT FOOTER START*/
+.footer-content-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-content-right-twitt {
+  height: 24px;
+  width: 24px;
+  background-image: url(../assets/Twitter.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 35px 0 30px 0;
+}
+
+.footer-content-right-facebook {
+    height: 24px;
+    width: 24px;
+    background-image: url(../assets/Facebook.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 35px 136px 30px 20px;
+  }
